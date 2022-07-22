@@ -8,7 +8,11 @@
 body{
     background-color: #4158D0;
     background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
-    height: 100vh;   
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
 }
 .contener1{
     display: flex;
@@ -20,6 +24,16 @@ body{
     
 
 }
+.contener1 .logo a{
+    color: black;
+}
+.contener1 .logo a:hover{
+    color: #FFCC70;
+    transition: 0.5s;
+}
+span{
+    padding: 8px;
+}
 .contener1 .navbar{
     display: flex;
     flex-direction: row;
@@ -28,8 +42,12 @@ body{
 }
 .contener1 .navbar a{
     margin-left: 50px;
-    color: white;
-    font-size: 14px;
+    color: black;
+    font-size: 16px;
+}
+.contener1 .navbar a:hover{
+    color: #fff;
+    transition: 0.5s;
 }
 .contener1 .navbar a:nth-child(4){
     font-weight: 500px;
@@ -37,9 +55,50 @@ body{
     border-radius: 50px;
     padding:10px 20px ;
 }
-
-
+.contener1 .navbar a:nth-child(4):hover{
+    border: 2px solid black;
+    transition: 0.5s;
+}
+.body{
+    display: flex;
     
-
- 
- 
+}
+.body .left{
+    width: 550px;
+    margin:50px;
+    padding-top: 3%;
+    padding-left: 23px;
+}
+.body .right{
+    width: 550px;
+    margin:50px;
+    padding-top: 3%;
+    padding-left: 23px;
+}
+.body .right .con{
+    text-align: center;
+    margin-top: 28px;
+    font-size: 26px;
+}
+.body .right h1{
+    text-align: center;
+    padding-bottom: 10px;
+    padding-top:2px;
+}
+.body .right .contact{
+    display: flex;
+    justify-content: center;
+  padding-top: 8px;
+  /* margin: 23px; */
+}
+.body .right .contact a{
+    color: #fff;
+    font-size: 23px;
+    padding: 12px;
+}
+.body .right .contact a:nth-child(1):hover{
+    color: rgb(44, 83, 184);
+}
+.body .right .contact a:nth-child(2):hover{
+    color: rgba(28, 26, 25, 0.66);
+}
