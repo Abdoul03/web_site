@@ -11,7 +11,6 @@ body{
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
-    width: 100%;
     overflow: hidden;
 }
 .contener1{
@@ -61,16 +60,19 @@ span{
 }
 .body{
     display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-between;
     
 }
 .body .left{
-    width: 550px;
+    width: 640px;
     margin:50px;
     padding-top: 3%;
     padding-left: 23px;
 }
 .body .right{
-    width: 550px;
+    width: 640px;
     margin:50px;
     padding-top: 3%;
     padding-left: 23px;
@@ -101,4 +103,82 @@ span{
 }
 .body .right .contact a:nth-child(2):hover{
     color: rgba(28, 26, 25, 0.66);
+}
+              /* Media query*/
+
+
+@media screen and (max-width:1100px) {
+    body{
+        display: block;
+        width: 100%;
+        height: 100%;
+        overflow: scroll;
+        background-size: cover;
+        
+    }
+    .body{
+        align-items: center;
+        flex-direction: column;
+    }
+    .contener1{
+        margin: 0 auto;
+        padding-top: 50px;
+        width: 550px;
+    }
+}
+
+@media screen and (max-width:900px){
+    body{
+        width: 100%;
+        height: 100%;
+    }
+    .body{
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .contener1 .logo a{
+        visibility: visible;
+    }
+    .contener1{
+        visibility: hidden;
+    }
+}
+
+@media screen and (max-width:638px) and (min-width:375px)  {
+    body{
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+    }
+    .body{
+        padding-left: 60px;
+        margin: 0 auto;
+        width: 100%;
+        align-items: center;
+        flex-direction: column;
+    }
+    .body .left{
+        width: 100%;
+    }
+    .body .right{
+        width: 100%;
+    }
+    .body .right p h1{
+        margin: 0 auto;
+        font-size: 20px;
+        text-align: center;
+    }
+}
+@media screen and (max-width:550px){
+    body{
+        width: 100%;
+        height: 100%;
+    }
+    .body{
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
 }
