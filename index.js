@@ -1,9 +1,16 @@
-const btns = document.querySelectorAll('.to');
+// const o = document.querySelector('.open');
+// const x = document.querySelector('.close');
 
-const body = document.querySelector('body');
+// console.log(o,x);
 
-btns.forEach((btn)=>{
-  btn.addEventListener("click",()=>{
-    body.classList.toggle('open');
-  });
+// o.addEventListener('click',()=>{
+//  o.classList.toggle('ouvrir');
+//  x.classList.toggle('fermer');
+// });
+
+let toggle = document.querySelector(".toggle");
+let body = document.querySelector("body");
+
+toggle.addEventListener('click',()=>{
+ body.classList.toggle('open');
 });
