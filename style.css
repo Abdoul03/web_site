@@ -20,7 +20,7 @@ body {
 }
 .contener1 {
   display: flex;
-  margin: 0 auto;
+  margin: 0 12px;
   position: relative;
   padding-top: 50px;
   flex-direction: row;
